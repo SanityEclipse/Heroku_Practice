@@ -1,0 +1,144 @@
+<style>
+body {
+    padding: 20px;
+}
+div {
+    padding: 5px;
+}
+
+/*h2 {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+
+}*/
+
+table {
+    color: white;
+    background-color: grey;
+}
+.button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.grand {
+    border: 1px solid black;
+    color: white;
+}
+.highlight {
+    background-color: orange;
+}
+.sub {
+    border: 1px solid black;
+    color: white;
+}
+.tax {
+    border: 1px solid black;
+    color: white;
+}
+body {
+    background: #ff6500;
+    background: -webkit-linear-gradient(left, #ff6500, #ffa500);
+    background: -o-linear-gradient(right, #ff6500, #ffa500);
+    background: -moz-linear-gradient(right, #ff6500, #ffa500);
+    background: linear-gradient(to right, #ff6500, #ffa500);
+}
+.menu {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+#order {
+    border: 1px solid black;
+    color: white;
+    height: 400px;
+    overflow: scroll;
+}
+</style>
+
+
+
+
+<div class="panel pane-primary panel-transparent" style="color:white; background-color:black; opacity: 0.8">
+        <div class="pannel-heading">
+            <h1> Galvanize Eats </h1>
+        </div>
+    </div>
+    <div>
+
+        <div class="col-sm-6 row-sm-10 menu">
+
+            <table class='table'>
+
+                <h2>Burgers</h2>
+                <div id="burgers"></div>
+
+                <h2>Pizza</h2>
+                <div id="pizza"></div>
+
+            </table>
+
+            <div style="padding-bottom:20px" class="menu">
+
+                <div class="input-group col-sm-4" style="float:left; background-color:black">
+                    <span class="input-group-addon" id="basic-addon1">Quantity</span>
+                    <input id='foodQuantity' type="number" name="quantity" min="1" max="99" maxlength="2" value="1" class="form-control" aria-describedby="basic-addon1">
+                </div>
+
+                <div>
+                    <button id="addToOrder" type="button" class="btn btn-primary button" style="margin-left:15px">Add to Order</button>
+                </div>
+
+            </div>
+            <form id='form'>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Name</span>
+                    <input id="name" type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Phone Number</span>
+                    <input id="phone" ype="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Address</span>
+                    <input id="address" type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+            </form>
+            <div>
+                <button id="deliver" type="button" class="btn btn-success button">Deliver It!</button>
+            </div>
+        </div>
+        <div class="col-sm-6" id="order">
+            <h3 style="text-align:center">Order</h3>
+        </div>
+
+        <div class="col-sm-6 sub">
+            <span> Subtotal For This Order: </span>
+            <span id='subTotal'></span>
+        </div>
+
+        <div class="col-sm-6 tax">
+            <span> Tax (8.3%):</span>
+            <span id='salesTax'></span>
+        </div>
+
+        <div class="col-sm-6 grand">
+            <span> Grand Total: </span>
+            <span id='grandTotal'></span>
+        </div>
+
+
+    </div>
+
+    </div>
+    <div class="panel panel-default col-sm-12" style="background-color:grey; margin-top: 5px">
+        <div class="panel-footer" style="background-color:black">
+            <p class="text-center" style="color:white">
+                <span>
+                 <span class="glyphicon glyphicon-copyright-mark" </span> Galvanize, 2015</span>
+                <span class="glyphicon glyphicon-tower" <span> Denver, Colorado</span>
+        </div>
+    </div>
