@@ -1,18 +1,15 @@
 <style>
 body {
     padding: 20px;
+    background: #ff6500;
+    background: -webkit-linear-gradient(left, #ff6500, #ffa500);
+    background: -o-linear-gradient(right, #ff6500, #ffa500);
+    background: -moz-linear-gradient(right, #ff6500, #ffa500);
+    background: linear-gradient(to right, #ff6500, #ffa500);
 }
 div {
     padding: 5px;
 }
-
-/*h2 {
-    color: white;
-    background-color: black;
-    opacity: 0.8;
-
-}*/
-
 table {
     color: white;
     background-color: grey;
@@ -39,13 +36,6 @@ table {
     border: 1px solid black;
     color: white;
 }
-body {
-    background: #ff6500;
-    background: -webkit-linear-gradient(left, #ff6500, #ffa500);
-    background: -o-linear-gradient(right, #ff6500, #ffa500);
-    background: -moz-linear-gradient(right, #ff6500, #ffa500);
-    background: linear-gradient(to right, #ff6500, #ffa500);
-}
 .menu {
     color: white;
     background-color: black;
@@ -59,14 +49,11 @@ body {
 }
 </style>
 
-
-
-
 <div class="panel pane-primary panel-transparent" style="color:white; background-color:black; opacity: 0.8">
         <div class="pannel-heading">
             <h1> Galvanize Eats </h1>
         </div>
-    </div>
+      </div>
     <div>
 
         <div class="col-sm-6 row-sm-10 menu">
@@ -93,7 +80,7 @@ body {
                 </div>
 
             </div>
-            <form id='form'>
+            <form id='deliver'>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Name</span>
                     <input id="name" type="text" class="form-control" aria-describedby="basic-addon1">
@@ -106,10 +93,11 @@ body {
                     <span class="input-group-addon" id="basic-addon1">Address</span>
                     <input id="address" type="text" class="form-control" aria-describedby="basic-addon1">
                 </div>
+                <div>
+                    <button id="deliver" type="submit" class="btn btn-success button">Deliver It!</button>
+                </div>
             </form>
-            <div>
-                <button id="deliver" type="button" class="btn btn-success button">Deliver It!</button>
-            </div>
+
         </div>
         <div class="col-sm-6" id="order">
             <h3 style="text-align:center">Order</h3>

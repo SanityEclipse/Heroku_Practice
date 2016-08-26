@@ -42,10 +42,15 @@ $(document).ready(function() {
         $(this).addClass('highlight');
     })
     $("#addToOrder").on('click', function(event) {
-        $(".highlight").clone().appendTo("#order");
-        $('#order').find('div.highlight').removeClass('highlight');
+        var $foodQ = $("#foodQuantity").val();
+        console.log($foodQ);
+        for (var i = 0; i < $foodQ; i++) {
+            $(".highlight").clone().appendTo("#order");
+            $('#order').find('div.highlight').removeClass('highlight').addClass('orderItem');
 
-        $('.highlight p1').each(function() {
+        }
+        total = 0;
+        $('.orderItem p1').each(function() {
             total += parseFloat(($(this).text()));
             tax = total * .083;
             grand = total + tax;
@@ -56,7 +61,8 @@ $(document).ready(function() {
     })
 
     $("#deliver").submit((e) => {
-        // e.preventDefault();
+        e.preventDefault();
+        console.log('test');
         let userInfo = {
             Name: $("#name").val(),
             Phone: $("#phone").val(),

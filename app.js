@@ -63,5 +63,5 @@ app.use(function(err, req, res, next) {
     });
 });
 
-console.log(process.env);
+
 module.exports = app;
